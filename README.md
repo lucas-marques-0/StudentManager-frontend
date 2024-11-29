@@ -20,7 +20,7 @@
    
 ![{B60B12CE-2727-4736-90CE-0FE2D27C4468}](https://github.com/user-attachments/assets/12b49f18-7ddd-425d-abd7-449168b6a725)
 
-4. Caso queira fazer alguma alteração nas configurações da extensão, configure o `manifest.json` na rais do seu projeto como quiser (opcional).
+4. Caso queira fazer alguma alteração nas configurações da extensão, configure o `manifest.json` na raíz do seu projeto como quiser (opcional).
 
 5. Rode `cp manifest.json dist/extensao/browser/` e confirme que uma cópia do `manifest.json` foi adicionada dentro do diretório `dist/extensao/browser/`.
   
