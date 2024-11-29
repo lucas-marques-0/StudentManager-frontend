@@ -1,4 +1,4 @@
-![{B60B12CE-2727-4736-90CE-0FE2D27C4468}](https://github.com/user-attachments/assets/2c804ec5-81f1-4702-9740-370c13632251)# StudentManager (Inicie) [Front-end]
+# StudentManager (Inicie) [Front-end]
 
 ![studentmanager-front](https://github.com/user-attachments/assets/6aa6e0dd-f40d-4668-8c9d-746d69412e10)
 
