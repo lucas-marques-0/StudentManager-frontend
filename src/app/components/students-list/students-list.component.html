@@ -1,0 +1,61 @@
+<div class="container">
+    <h1>Gerenciamento de Alunos</h1>
+
+    <!-- Formulário para adicionar ou editar aluno -->
+    <mat-card>
+        <form (ngSubmit)="submitForm()" #studentForm="ngForm">
+            <mat-form-field appearance="fill">
+                <mat-label>Nome</mat-label>
+                <input matInput type="text" name="name" [(ngModel)]="formData.name" required />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput type="email" name="email" [(ngModel)]="formData.email" required />
+            </mat-form-field>
+
+            <button mat-raised-button color="primary" type="submit">
+                {{ isEdit ? 'Atualizar' : 'Adicionar' }} Aluno
+            </button>
+            @if (isEdit) {
+            <button mat-raised-button color="warn" type="button" (click)="resetForm()">Cancelar</button>
+            }
+            @if (emptyForm) {
+            <p class="warn-text">Preencha todos os campos para continuar!</p>
+            }
+            @if (invalidEmail) {
+            <p class="warn-text">Por favor, insira um email válido!</p>
+            }
+        </form>
+    </mat-card>
+
+    <!-- Listagem de Alunos -->
+    <mat-card class="students-list">
+        <mat-table [dataSource]="students" class="mat-elevation-z8">
+            <ng-container matColumnDef="name">
+                <mat-header-cell *matHeaderCellDef> Nome </mat-header-cell>
+                <mat-cell *matCellDef="let student" class="break-word"> {{ student.name }} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="email">
+                <mat-header-cell *matHeaderCellDef> Email </mat-header-cell>
+                <mat-cell *matCellDef="let student" class="break-word"> {{ student.email }} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="actions">
+                <mat-header-cell *matHeaderCellDef> Ações </mat-header-cell>
+                <mat-cell *matCellDef="let student">
+                    <button mat-icon-button color="accent" (click)="editStudent(student)">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                    <button mat-icon-button color="warn" (click)="deleteStudent(student.id)">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </mat-cell>
+            </ng-container>
+
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+        </mat-table>
+    </mat-card>
+</div>

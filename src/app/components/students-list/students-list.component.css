@@ -1,0 +1,39 @@
+.container {
+    width: 700px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+  
+mat-card {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.students-list {
+    overflow-x: auto;
+}
+
+mat-form-field {
+    width: 90%;
+    margin: 15px;
+    margin-bottom: 0px;
+}
+
+form button {
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+.warn-text {
+    color: red;
+    margin: 15px;
+}
+
+.break-word {
+    word-wrap: break-word; 
+    word-break: break-word;
+}
