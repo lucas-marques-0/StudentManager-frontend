@@ -23,6 +23,8 @@
 4. Caso queira fazer alguma alteração nas configurações da extensão, configure o `manifest.json` na raíz do seu projeto como quiser (opcional).
 
 5. Rode `cp manifest.json dist/extensao/browser/` e confirme que uma cópia do `manifest.json` foi adicionada dentro do diretório `dist/extensao/browser/`.
+
+![{C4367ACA-B7C9-49F9-9744-BF750E87C85A}](https://github.com/user-attachments/assets/e6a71bec-6064-43f3-91b4-cc7609a4ea95)
   
 6. Abra o Google Chrome (ou qualquer outro navegador baseado no chrome) e vá até chrome://extensions/.
   
@@ -33,5 +35,3 @@
 9. Selecione o diretório `dist/extensao/browser/` do seu projeto (onde está o manifest.json).
 
 10. Observe que a extensão foi adicionada e está pronta para usar (ao clicar nela) na seção superior do seu navegador (onde ficam as extensões), normalmente no canto superior direito.
-
-   
