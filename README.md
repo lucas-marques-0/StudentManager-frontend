@@ -8,13 +8,13 @@
 
 1. Inicie rodando `npm install` no terminal, para instalar as dependências nescessárias.
 
-## Caso queiro rodar em formato de página web:
+## Caso queira rodar em formato de página web:
 
-2. Para rodar o projeto em uma página web, rode `ng serve`
+2. Para rodar o projeto em uma página web, rode `ng serve`.
 
-## Caso queiro rodar em formato de extensão:
+## Caso queira rodar em formato de extensão:
 
-2. Rode `ng build --output-path=dist/extensao --base-href ./` no terminal
+2. Rode `ng build --output-path=dist/extensao --base-href ./` no terminal.
 
 3. Note que foi criada essa pasta na raiz do seu projeto:
    
