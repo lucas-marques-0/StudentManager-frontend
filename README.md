@@ -1,27 +1,23 @@
-# Frontend
+# StudentManager (Inicie) [Front-end]
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+![studentmanager-front](https://github.com/user-attachments/assets/6aa6e0dd-f40d-4668-8c9d-746d69412e10)
 
-## Development server
+## Etapas até rodar o projeto:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Inicie rodsando `npm install` no terminal, para instalar as dependências nescessárias.
 
-## Code scaffolding
+## Caso queiro rodar em formato de página web:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Para rodar o projeto em uma página web, rode `ng serve`
 
-## Build
+## Caso queiro rodar em formato de extensão:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Preparar a Extensão A extensão do navegador está localizada no diretório extension/ dentro do repositório.
+  
+3. Abra o Google Chrome e vá até chrome://extensions/.
+  
+5. Ative a opção Modo de desenvolvedor (Developer mode) no canto superior direito.
+  
+7. Clique em Carregar sem compactação (Load unpacked).
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+9. Selecione o diretório extension/ do seu projeto.
